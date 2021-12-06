@@ -1,15 +1,19 @@
 package com.pluralsight.conference.model;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
-import java.util.ArrayList;
-import java.util.List;
 
+@Entity
+@Table(name = "REGISTRATION")
 public class Registration {
+    @Id
+    @GeneratedValue
     private Long id;
 
+    @NotEmpty
     private String name;
 
     public Long getId() {
