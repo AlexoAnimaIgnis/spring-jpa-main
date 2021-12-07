@@ -49,3 +49,9 @@
     - centered around objects
     - example
         Query q = em.createQuery("Select r from Registration")
+
+# Projection
+    - Presents Object to the UI
+    - Objects added using JPQL
+    - Projection Objects can be JPA Entities
+    - Constructor for the projection is Needd
