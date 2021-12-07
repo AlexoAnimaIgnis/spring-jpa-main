@@ -26,20 +26,26 @@
 # @Transactional 
     - beginning of transaction
 
---- JOIN TYPES ----
- used to bind collections of objects to the databse
+#--- JOIN TYPES ----
+    - used to bind collections of objects to the databse
+    - Four types of Join:
+        1. @OneToOne
+            - most common
+            - paired with @ManyToOne
+            - mappedBy
+        2. @OneToMany
+        3. @ManyToOne
+        4. @ManyToMany
 
-four types:
-
-@OneToOne
-    - most common
-    - paired with @ManyToOne
-    - mappedBy
-@OneToMany
-@ManyToOne
-@ManyToMany
-
-Configurations
-Unidirectional
-Bidirectional
-Cascadiing
+    - Configurations
+        - Unidirectional
+        - Bidirectional
+        - Cascading
+# Fetch Types
+    - lazy db - database query when the property is called
+    - eager db - database query when object is CREATED
+# JPQL (java persistence query language)
+    - JPQL is not SQL
+    - centered around objects
+    - example
+        Query q = em.createQuery("Select r from Registration")
