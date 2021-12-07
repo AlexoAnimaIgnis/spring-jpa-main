@@ -55,3 +55,10 @@
     - Objects added using JPQL
     - Projection Objects can be JPA Entities
     - Constructor for the projection is Needd
+
+# NamedQueries
+    - example @NamedQueries({@NamedQuery(name=Registration.FIND_REGISTRATION_REPORTS,
+                query =Registration.FIND_REGISTRATION_REPORTS_JPQL)})
+    - clean up adhoc JPQL, cleaner than adhoc jpql
+    - not required, but focuses on the domain
+    - Named Parameters
