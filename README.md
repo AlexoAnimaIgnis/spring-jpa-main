@@ -25,3 +25,21 @@
     - database integration
 # @Transactional 
     - beginning of transaction
+
+--- JOIN TYPES ----
+ used to bind collections of objects to the databse
+
+four types:
+
+@OneToOne
+    - most common
+    - paired with @ManyToOne
+    - mappedBy
+@OneToMany
+@ManyToOne
+@ManyToMany
+
+Configurations
+Unidirectional
+Bidirectional
+Cascadiing
