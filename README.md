@@ -62,3 +62,7 @@
     - clean up adhoc JPQL, cleaner than adhoc jpql
     - not required, but focuses on the domain
     - Named Parameters
+
+# Updates
+    - Persist method is just used for Creates
+    - Merge is used for Updating a record
