@@ -66,3 +66,9 @@
 # Updates
     - Persist method is just used for Creates
     - Merge is used for Updating a record
+
+#Spring Data
+    - Spring Data is a wrapper for JPA
+    - Replaces our Repository Tier
+    - Eliminates Boiler plate code
+    - Extended for additional functionality
